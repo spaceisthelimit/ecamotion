@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SF Youth Soccer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<style>
+		   #map {
+			width: 100%;
+			height: 300px;
+		  }
+		</style>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+	</head>
+	<body class="right-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Ecamotion <span>Empowering The Future</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">Activities</a>
+								<ul>
+									<li class="submenu">
+										<a href="#">Sports</a>
+										<ul>
+											<li><a href="basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
+											<li><a href="#">Swimming</a></li>
+											<li><a href="#">Hockey</a></li>
+										</ul>
+									</li>
+                                    <li class="submenu">
+										<a href="#">Arts and Theatre</a>
+										<ul>
+											<li><a href="Visual arts.html">Visual Arts</a></li>
+											<li><a href="performingarts.html">Performing Arts</a></li>
+										</ul>
+									</li>
+                                    <li class="submenu">
+										<a href="STEM.html">STEM</a>
+
+									</li>
+                                    <li class="submenu">
+										<a href="Volunteer.html">Volunteer</a>
+
+									</li>
+								</ul>
+							</li>
+							<li><a href="index.html" class="button special">Logout</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon fa-futbol-o  "></span>
+						<h2> San Francisco Youth <strong>Soccer</strong></h2>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container">
+
+							<div class="row 150%">
+								<div class="8u 12u(narrower)">
+
+									<!-- Content -->
+										<div class="content">
+											<section>
+												<a class="image featured"><img src="images/sfyspage.jpg" alt="" /></a>
+												<header>
+													<h3>SOCCER</h3>
+												</header>
+												<p>Recreational teams get 1 game and 1 practice a week during the seasons. Also, there is no yearlong commitment to play. A number of recreational teams only play the fall season and then switch to a different sport to play in the spring, while competitive teams must play at least 3 seasons and participate in tournaments</p>
+                                                <p>SF Youth Soccer believes all kids should learn how to lose as well as win. Ideally, teams will play against teams that roughly equal to their own, resulting in a good mix of wins and losses. Losses? Yes, losses give players, and teams, a chance to learn valuable lessons: it stimulates players to work harder in practice to get better; they learn to fight back, during a game, playing from behind; they learn it’s not the end of the world to lose.</p>
+                                                
+											</section>
+										</div>
+
+								</div>
+								<div class="4u 12u(narrower)">
+
+									<!-- Sidebar -->
+										<div class="sidebar">
+											<section>
+												<header>
+													<h3>Information</h3>
+												</header>
+												<p>The SF Youth Soccer Recreational program is underscored by our belief that children learn and enjoy soccer the most when playing against teams of similar ability. We make every effort to group teams into brackets of like skill level and at the younger ages even we-bracket midseason as necessary.</p>
+                                                <footer>
+												</footer>
+											</section>
+											<section>
+												<header>
+													<h3>Location</h3>
+												</header>
+												<div id="map"></div>
+												<div id="capture"></div>
+													<script>
+															function initMap() {
+															  var myLatLng = {lat: 37.743028, lng:-122.481700};
+
+															  var map = new google.maps.Map(document.getElementById('map'), {
+																zoom: 13,
+																center: myLatLng
+															  });
+
+															  var marker = new google.maps.Marker({
+																position: myLatLng,
+																map: map,
+																title: 'Hello World!'
+															  });
+                                                              
+                                                              var contentString = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">San Francisco Youth Soccer </h1>'+
+                                                                  '1434 Taraval at 24th San Francisco, CA 94116 '+
+																  '</div>'
+															  var infowindow = new google.maps.InfoWindow({
+																content: contentString
+																});
+                                                                
+                                                            marker.addListener('click', function() {
+                                                                infowindow.open(map, marker);
+															});
+                                                              
+															}
+													</script>
+													<script async defer
+														src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFiF1xjH0DD0K-d-L9OcgaEZekk33yp9w&callback=initMap">
+													</script>
+                                                    <br />
+                                                <p><strong>Location:</strong> SF Youth Soccer,<br/> 1434 Taraval at 24th <br />San Francisco, CA 94116 <br />
+													<strong>Dates:</strong> League Dates Click <a target="_blank" href="http://www.sfyouthsoccer.com/">here</a>
+													<strong>Phone:</strong> (415) 504-8131
+                                                
+                                                 <script type="text/javascript">
+                                                $(document).ready(function(){
+                                                $('#category-tabs li a').click(function(){
+                                                    $(this).next('ul').slideToggle('500');
+                                                    $(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+                                                });
+                                                });
+                                                    </script>
+												<footer>
+												</footer>
+											</section>
+										</div>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<!--<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>-->
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+		</div>
+
+		
+			
+	</body>
+</html>

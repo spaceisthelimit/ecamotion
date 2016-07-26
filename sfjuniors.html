@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SF Juniors Volleyball</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<style>
+		   #map {
+			width: 100%;
+			height: 300px;
+		  }
+		</style>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
+	</head>
+	<body class="right-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Ecamotion <span>Empowering The Future</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="userfeed.html">Welcome, emma</a></li>
+							<li class="submenu">
+								<a href="#">Activities</a>
+								<ul>
+									<li class="submenu">
+										<a href="#">Sports</a>
+										<ul>
+											<li><a href="Basketball.html">Basketball</a></li>
+											<li><a href="Volleyball.html">Volleyball</a></li>
+											<li><a href="Soccer.html">Soccer</a></li>
+											<li><a href="#">Swimming</a></li>
+                                            <li><a href="#">Hockey</a></li>
+										</ul>
+									</li>
+                                    <li class="submenu">
+										<a href="#">Arts and Theater</a>
+										<ul>
+											<li><a href="Visual arts.html">Visual Arts</a></li>
+											<li><a href="performingarts.html">Performing Arts</a></li>
+										</ul>
+									</li>
+                                    <li class="submenu">
+										<a href="STEM.html">STEM</a>
+										
+									</li>
+									<li><a href="Volunteer.html">Volunteer</a></li>
+								</ul>
+							</li>
+							<li><a class="button special" href="index.html" >Logout</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon fa-futbol-o "></span>
+						<h2><strong>San Francisco Juniors Volleyball Club</strong></h2>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container">
+
+							<div class="row 150%">
+								<div class="8u 12u(narrower)">
+
+									<!-- Content -->
+										<div class="content">
+											<section>
+												<a class="image featured"><img src="images/myteam.jpg" alt="" /></a>
+												<header>
+													<h3><strong>Volleyball</strong></h3>
+												</header>
+												<p>"San Francisco Juniors Volleyball Club is committed to promoting and developing, through its players, the sport of volleyball and to support parents in guiding each player to become the best person they can be on and off the court. The Club recognizes that participation in any sport is good for the physical, mental, and social development of young people. San Francisco Juniors Volleyball Club is dedicated in providing its athletes with the proper technical, tactical, and physical training in a competitive atmosphere to be the best possible volleyball player." </p>
+												
+											</section>
+										</div>
+
+								</div>
+								<div class="4u 12u(narrower)">
+
+									<!-- Sidebar -->
+										<div class="sidebar">
+											<section>
+												<header>
+							
+												</header>
+												<h3><strong>Information</strong></h3>
+												<footer>
+                                                
+                                                <p> "San Francisco Juniors Volleyball Club (SF Juniors VBC) is a non-profit high performance volleyball program for girls ages 18 and under. The program is governed by the United States Volleyball Association (USVA) and part of the Northern California Volleyball Association (NCVA) region. SF Juniors VBC offers teams in various divisions beginning at 10 & under and up to 18 & under. "</p>
+												</footer>
+                                                <br/>
+                                                <p>
+												For more info: <a target="_blank" href="http://sfjuniors.com/">http://sfjuniors.com/</a>
+											</section>
+											<section>
+												<header>
+													<h3>Location</h3>
+												</header>
+												<div id="map"></div>
+												<div id="capture"></div>
+													<script>
+															function initMap() {
+															  var mapDiv = document.getElementById('map')
+                                                              
+                                                              var myLatLng = {lat: 37.725889, lng:-122.451071};
+                                                             
+                                                              
+															  var map = new google.maps.Map(document.getElementById('map'), {
+																zoom: 11,
+																center: myLatLng,
+                                                             });
+
+															  var marker = new google.maps.Marker({
+																position: myLatLng,
+																map: map,
+																title: 'Hello World!'
+															  });
+                                                              
+                                                              var contentString = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">City College of San Francisco</h1>'+
+                                                                  '50 Phelan Ave. San Francisco CA, 94122'+
+																  '</div>'
+															  var infowindow = new google.maps.InfoWindow({
+																content: contentString
+																});
+                                                                
+                                                            marker.addListener('click', function() {
+                                                                infowindow.open(map, marker);
+															});
+                                                              
+                                                              
+                                          
+
+                                                            var myLatLng2 = {lat: 37.739791, lng:-122.474082};
+															  
+                                                            var marker2 = new google.maps.Marker({
+																position: myLatLng2,
+																map: map,
+																title: 'Hello World!'
+															  });
+                                                              
+                                                            var contentString2 = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">St. Cecilia</h1>'+
+                                                              
+                                                                  '600 Vicente Street San Francisco, CA 94116'+
+																  '</div>'
+															  var infowindow2 = new google.maps.InfoWindow({
+																content: contentString2
+																});
+                                                              
+                                                            marker2.addListener('click', function() {
+															infowindow2.open(map, marker2);
+															}); 
+                                                              
+                                                              
+                                                              
+                                                              var myLatLng3 = {lat: 37.767479, lng:-122.454017};
+
+															
+
+															  var marker3 = new google.maps.Marker({
+																position: myLatLng3,
+																map: map,
+																title: 'Hello World!'
+															  });
+                                                              var contentString3 = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">Kezar Pavilion</h1>'+
+                                                                  
+                                                                  '755 Stanyan St. San Francisco, CA 94117'+
+																  '</div>'
+															  var infowindow3 = new google.maps.InfoWindow({
+																content: contentString3
+																});
+                                                              
+                                                            marker3.addListener('click', function() {
+															infowindow3.open(map, marker3);
+															}); 
+                                                              
+                                                              
+                                                              
+                                                              
+                                                             
+
+
+
+                                                             var myLatLng4 = {lat: 37.748069, lng:-122.495931};
+
+															  
+
+															  var marker4 = new google.maps.Marker({
+																position: myLatLng4,
+																map: map,
+																title: 'Hello World!'
+															  });
+                                                              var contentString4 = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">St. Ignatius College Preparatory</h1>'+
+                                                                  
+                                                                  '2001 37th Ave. San Francisco, CA 94116'+
+																  '</div>'
+															  var infowindow4 = new google.maps.InfoWindow({
+																content: contentString4
+																});
+                                                              
+                                                            marker4.addListener('click', function() {
+															infowindow4.open(map, marker4);
+															}); 
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              var myLatLng5 = {lat: 37.783270, lng:-122.477977};
+
+															  
+
+															  var marker5 = new google.maps.Marker({
+																position: myLatLng5,
+																map: map,
+																title: 'Hello World!'
+															  });
+                                                              var contentString5 = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">Richmond Recreational Center</h1>'+
+                                                                 
+                                                                  '251 18th Ave. San Francisco, CA 94121'+
+																  '</div>'
+															  var infowindow5 = new google.maps.InfoWindow({
+																content: contentString5
+																});
+                                                              
+                                                            marker5.addListener('click', function() {
+															infowindow5.open(map, marker5);
+															}); 
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              var myLatLng6 = {lat:37.712734, lng:-122.473558};
+
+															  
+
+															  var marker6 = new google.maps.Marker({
+																position: myLatLng6,
+																map: map,
+																title: 'Hello World!'
+															  });
+                                                              var contentString6 = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">St. Thomas More</h1>'+
+                                                                 
+                                                                 '50 Thomas More Way San Francisco, CA 94132' +
+																  '</div>'
+															  var infowindow6 = new google.maps.InfoWindow({
+																content: contentString6
+																});
+                                                              
+                                                            marker6.addListener('click', function() {
+															infowindow6.open(map, marker6);
+															}); 
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              var myLatLng7 = {lat: 37.778034, lng:-122.446306};
+
+															 
+															  var marker7 = new google.maps.Marker({
+																position: myLatLng7,
+																map: map,
+																title: 'Hello World!'
+															  });
+                                                              var contentString7 = '<div id="content">'+
+																  '<div id="siteNotice">'+
+																  '</div>'+
+																  '<h1 id="firstHeading" class="firstHeading">San Francisco Day School</h1>'+
+                                                                  
+                                                                  '350 Masonic Ave. San Francisco, CA 94118'+
+																  '</div>'
+															  var infowindow7 = new google.maps.InfoWindow({
+																content: contentString7
+																});
+                                                              
+                                                            marker7.addListener('click', function() {
+															infowindow7.open(map, marker7);
+															}); 
+                                                              
+															}
+													</script>
+													<script async defer
+														src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFiF1xjH0DD0K-d-L9OcgaEZekk33yp9w&callback=initMap">
+													</script>
+                                                    <br/>
+                                                    <p><strong>Location:</strong> San Francisco click <a target="_blank" href="http://sfjuniors.com/locations/">here</a><br />
+													<strong>Dates:</strong> Practice Schedule click <a target="_blank" href="http://sfjuniors.com/calendar/">here</a>
+													<strong>Phone:</strong> (415) 674-4399
+												
+												 <script type="text/javascript">
+													$(document).ready(function(){
+													$('#category-tabs li a').click(function(){
+														$(this).next('ul').slideToggle('500');
+														$(this).find('i').toggleClass('fa fa-bookmark-o fa-3x fa fa-bookmark fa-3x');
+													});
+													});
+                                                 </script>
+												<footer>
+												</footer>
+											</section>
+										</div>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<!--<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>-->
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy 2016 ECAmotion</li><li><a href="about.html">About Us</a></li><li>Design courtesy of: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+		</div>
+
+		
+	</body>
+</html>
