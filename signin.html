@@ -32,7 +32,7 @@
 				var emmahawk = "emmahawk"; 
 				var password = "12345";
 				if ((un == emmahawk) && (pw == 12345)) {
-					loadPage('userfeed.html');
+					
 					return true;
 				}
 				else {
@@ -67,7 +67,7 @@
 
 							<!-- Content -->
 								<div class="content">
-									<form name="loginform" onSubmit=" return myFunction();" action="index.html" method="post">
+									<form name="loginform" onSubmit=" return myFunction();" loadPage('userfeed.html'); method="post">
 										<div class="row 50%">
 											<div class="12u" >
 												<input type="text" name="usr" placeholder="Username" />
